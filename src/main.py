@@ -1,14 +1,13 @@
 import sys
-from PyQt5 import QtWidgets, QtCore
+import os
+from PyQt5 import QtWidgets
 
-from views.ui_mainwindow import Ui_MainWindow
+from views.mainwindow import MainWindow
 
-class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.setupUi(self)
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
 
+# exec
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
