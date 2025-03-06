@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>198</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="config_layout">
+     <item>
+      <layout class="QHBoxLayout" name="import_connect_layout">
+       <item>
+        <layout class="QHBoxLayout" name="connect_status_layout">
+         <item>
+          <widget class="QPushButton" name="connect_btn">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Conectar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="status_label">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="spacer_import">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="exp_line_edit">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Experimento #</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_8">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="exp_layout">
+       <item>
+        <layout class="QHBoxLayout" name="ch_conf_layout">
+         <item>
+          <layout class="QHBoxLayout" name="input_ch_layout">
+           <item>
+            <widget class="QLabel" name="input_ch_label">
+             <property name="text">
+              <string>Input Channels:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="n_channel_label">
+             <property name="text">
+              <string>1</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="output_ch_layout">
+           <item>
+            <widget class="QLabel" name="output_ch_label">
+             <property name="text">
+              <string>Output Channels:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="output_ch_input">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>15</number>
+             </property>
+             <property name="value">
+              <number>6</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

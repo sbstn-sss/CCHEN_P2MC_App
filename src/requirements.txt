@@ -1,2 +1,4 @@
 # Generar MainWindow.py desde archivo .ui
 pyuic5 ui/mainwindow.ui -o ui/ui_mainwindow.py
+pyuic5 ui/config.ui -o ui/ui_config.py
+pyuic5 ui/app.ui -o ui/ui_app.py

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>505</width>
-    <height>633</height>
+    <height>689</height>
    </rect>
   </property>
   <property name="palette">
@@ -461,468 +461,57 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_10">
     <item>
-     <layout class="QVBoxLayout" name="config_layout">
+     <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <layout class="QHBoxLayout" name="import_connect_layout">
-        <item>
-         <widget class="QPushButton" name="import_btn">
-          <property name="maximumSize">
-           <size>
-            <width>150</width>
-            <height>16777215</height>
-           </size>
-          </property>
-          <property name="text">
-           <string>importar</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="connect_status_layout">
-          <item>
-           <spacer name="spacer_import">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="connect_btn">
-            <property name="maximumSize">
-             <size>
-              <width>150</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Conectar</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLabel" name="status_label">
-            <property name="maximumSize">
-             <size>
-              <width>150</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Status</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
+       <widget class="QPushButton" name="import_btn">
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>importar</string>
+        </property>
+       </widget>
       </item>
       <item>
-       <widget class="Line" name="line_8">
+       <widget class="QPushButton" name="config_btn">
+        <property name="text">
+         <string>Configuracion</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="exp_layout">
-        <item>
-         <widget class="QLineEdit" name="exp_line_edit">
-          <property name="text">
-           <string/>
-          </property>
-          <property name="placeholderText">
-           <string>Experimento #</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="ch_conf_layout">
-          <item>
-           <layout class="QHBoxLayout" name="input_ch_layout">
-            <item>
-             <widget class="QLabel" name="input_ch_label">
-              <property name="text">
-               <string>Input Channels:</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="n_channel_label">
-              <property name="text">
-               <string>1</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="output_ch_layout">
-            <item>
-             <widget class="QLabel" name="output_ch_label">
-              <property name="text">
-               <string>Output Channels:</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QSpinBox" name="output_ch_input">
-              <property name="minimum">
-               <number>1</number>
-              </property>
-              <property name="maximum">
-               <number>15</number>
-              </property>
-              <property name="value">
-               <number>6</number>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </item>
-       </layout>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
       </item>
      </layout>
     </item>
     <item>
-     <widget class="Line" name="line_4">
+     <spacer name="verticalSpacer">
       <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+       <enum>Qt::Vertical</enum>
       </property>
-     </widget>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="inputs_main_layout">
-      <item>
-       <widget class="QLabel" name="inputs_label">
-        <property name="text">
-         <string>Inputs:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="inputs_layout">
-        <item>
-         <layout class="QVBoxLayout" name="machine_in_layout">
-          <item>
-           <widget class="QLabel" name="maquina_label">
-            <property name="text">
-             <string>Maquina:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <layout class="QFormLayout" name="machine_in_form">
-            <item row="0" column="0">
-             <widget class="QLabel" name="v_label">
-              <property name="text">
-               <string>Voltaje:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QDoubleSpinBox" name="v_in"/>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="current_label">
-              <property name="text">
-               <string>Corriente:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QDoubleSpinBox" name="current_in"/>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <widget class="Line" name="line_5">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout_4">
-          <item>
-           <widget class="QLabel" name="canales_label">
-            <property name="text">
-             <string>Canales:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <layout class="QGridLayout" name="flux_grid">
-            <item row="1" column="1">
-             <widget class="QLabel" name="ch1_in_label">
-              <property name="text">
-               <string>CH1:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="flux_label">
-              <property name="text">
-               <string>Flujo:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QDoubleSpinBox" name="ch1_in"/>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <spacer name="horizontalSpacer">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <widget class="Line" name="line_3">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
       </property>
-     </widget>
+     </spacer>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="graph_layout">
-      <item>
-       <widget class="PlotWidget" name="out_graph" native="true">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <widget class="Line" name="line_2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="outputs_main_layout">
-      <item>
-       <widget class="QLabel" name="outputs_label">
-        <property name="text">
-         <string>Outputs:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="Line" name="line_6">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="channels_out_layout">
-        <item>
-         <widget class="QLabel" name="ch_out_label">
-          <property name="text">
-           <string>Canales:</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="ch_grid_layout">
-          <item>
-           <layout class="QGridLayout" name="temp_q_grid">
-            <item row="3" column="0">
-             <widget class="QLabel" name="q_out_label">
-              <property name="text">
-               <string>Q:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="temp_out_label">
-              <property name="text">
-               <string>Temperatura:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QLabel" name="ch1_out_label">
-              <property name="text">
-               <string>CH1:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QLabel" name="ch1_t_label">
-              <property name="text">
-               <string>empty</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="QLabel" name="ch1_q_label">
-              <property name="text">
-               <string>empty</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <widget class="Line" name="line_7">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="calc_layout">
-        <item>
-         <widget class="QLabel" name="calculos_label">
-          <property name="text">
-           <string>Calculos:</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <layout class="QFormLayout" name="calc_form">
-          <item row="0" column="1">
-           <widget class="QLabel" name="p_out">
-            <property name="text">
-             <string>Empty</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="q_tot_label">
-            <property name="text">
-             <string>Q total:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QLabel" name="q_tot_out">
-            <property name="text">
-             <string>Empty</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="eff_label">
-            <property name="text">
-             <string>Eficiencia:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QLabel" name="eff_out">
-            <property name="text">
-             <string>Empty</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="p_label">
-            <property name="text">
-             <string>Potencia Maquina:</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <widget class="Line" name="line">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="buttons_main_layout">
-      <item>
-       <layout class="QHBoxLayout" name="timer_layout">
-        <item>
-         <widget class="QWidget" name="placeholder_widget" native="true"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="start_stop_res_layout">
-        <item>
-         <widget class="QPushButton" name="start_btn">
-          <property name="text">
-           <string>start</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="stop_btn">
-          <property name="text">
-           <string>stop</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="reset_btn">
-          <property name="text">
-           <string>reset</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <widget class="QPushButton" name="save_btn">
-        <property name="text">
-         <string>save</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <layout class="QVBoxLayout" name="app_layout"/>
     </item>
    </layout>
   </widget>
@@ -960,14 +549,6 @@
    </attribute>
   </widget>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>PlotWidget</class>
-   <extends>QWidget</extends>
-   <header>pyqtgraph</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
