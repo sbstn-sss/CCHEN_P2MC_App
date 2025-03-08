@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>198</height>
+    <height>211</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,51 +17,7 @@
    <item>
     <layout class="QVBoxLayout" name="config_layout">
      <item>
-      <layout class="QHBoxLayout" name="import_connect_layout">
-       <item>
-        <layout class="QHBoxLayout" name="connect_status_layout">
-         <item>
-          <widget class="QPushButton" name="connect_btn">
-           <property name="maximumSize">
-            <size>
-             <width>150</width>
-             <height>16777215</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>Conectar</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="status_label">
-           <property name="maximumSize">
-            <size>
-             <width>150</width>
-             <height>16777215</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>Status</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="spacer_import">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </item>
-      </layout>
+      <layout class="QHBoxLayout" name="import_connect_layout"/>
      </item>
      <item>
       <widget class="QLineEdit" name="exp_line_edit">
@@ -72,6 +28,9 @@
         <string>Experimento #</string>
        </property>
       </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout"/>
      </item>
      <item>
       <widget class="Line" name="line_8">
@@ -125,6 +84,35 @@
             </widget>
            </item>
           </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="from_settings">
+       <item row="0" column="0">
+        <widget class="QLabel" name="sampling_period">
+         <property name="text">
+          <string>Periodo de muestra de Temperatura:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <layout class="QHBoxLayout" name="sampling_layout">
+         <item>
+          <widget class="QDoubleSpinBox" name="periodo_muestreo_input">
+           <property name="value">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>[s]</string>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>

@@ -178,8 +178,6 @@ class Ui_MainWindow(object):
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout.addItem(spacerItem)
         self.verticalLayout_10.addLayout(self.horizontalLayout)
-        spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_10.addItem(spacerItem1)
         self.app_layout = QtWidgets.QVBoxLayout()
         self.app_layout.setObjectName("app_layout")
         self.verticalLayout_10.addLayout(self.app_layout)

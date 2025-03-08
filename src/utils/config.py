@@ -61,4 +61,8 @@ def ejecutar_comandos_desde_archivo(ruta_archivo):
     return resultados
 
 for out in ejecutar_comandos_desde_archivo("requirements.txt"):
-    print(out)
+    if out['error']:
+        print(f"Error en el comando: {out['comando']}")
+        print(f"Error: {out['error']}")
+    else:
+        print(f"Comando ejecutado correctamente: {out['comando']}")
